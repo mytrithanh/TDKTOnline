@@ -8,18 +8,18 @@
 
 .header-top {
     top: 0;
-    position: fixed;
+    /* position: fixed; */
     z-index: 999;
     width: 100%;
 }
 
 .top-header {
     border-bottom: 2px solid #fff;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .slider {
-    margin-top: 8%;
+    /* margin-top: 8%; */
 }
 .active{
     font-weight: 700;
