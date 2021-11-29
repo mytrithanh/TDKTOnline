@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="shortcut icon" href="/img/heart-icon-png-transparent-4.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fonts/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+
+</head>
+<body>
+  <!-- header -->
+    <div class="header-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top top-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                  <p class="logo-main d-inline-block">TDKT Online</p>
+    
+                  <div class="d-inline-block d-lg-none">
+                    <form class="form-inline" style="width: 100px; display: inline-block;">
+                      <input class="form-control mr-sm-2 ml-4" style="width: 100px; display: inline-block;" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0 " style="width: 40px" type="submit"><i class="ti-search text-center"></i></button>
+                    </form>  
+                  </div>
+                </a>
+    
+                <span class="shopping-cart ml-5 d-lg-none">
+                  <a href="#">
+                    <i class="ti-shopping-cart head-icon  btn">                    
+                      <span class="quantity" id="products-quantity-mobile">0</span>
+                    </i>
+                  </a>
+                </span> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav text-left">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Trang Chủ </span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Khóa học</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Giáo viên</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Phòng thi  </a>
+                     <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#"> Phòng 1</a></li>
+                     <li><a class="dropdown-item" href="#"> Phòng 2 </a></li>
+                     <li><a class="dropdown-item" href="#"> Phòng 3 </a></li>
+                     </ul>
+                 </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Học phí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tin Tức</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./Pages/contact.html">Liên Hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+<!-- sub header -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+        <div class="container-fluid">
+            <form class="form-inline collapse navbar-collapse">
+                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="ti-search"></i> Tìm</button>
+            </form>  
+           
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-id-badge"></i> Đăng nhập</button>
+                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-user"></i> Đăng ký</button>
+                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-comments"></i> Góp ý</button>  
+                <span class="favorite-cart ">
+                  <a href="#">
+                    <i class="ti-heart head-icon ml-2 btn ">                    
+                      <span class="heart-quantity" id="heart-quantity">0</span>
+                    </i>
+                  </a>
+                </span> 
+
+                <span class="shopping-cart d-none d-lg-inline-block">
+                  <a href="#">
+                    <i class="ti-shopping-cart head-icon ml-2 btn">                    
+                        <span class="quantity" id="products-quantity-pc">0</span>
+                    </i>
+                  </a>
+                </span>            
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- end header -->
+
+    <!-- contact -->
+    <section class="ftco-section pad-top-10p">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">
+                        <i class="fa fa-id-badge"></i>
+                        LIÊN HỆ VỚI CHÚNG TÔI
+                    </h2>
+				</div>
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters mb-5">
+							<div class="col-md-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Liên Hệ</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+                                    <div id="form-message-success" class="mb-4">
+                                    Gửi thành công!
+                                    </div>
+									<form method="get" accept-charset="utf-8" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="FamilyName">Họ</label>
+                                                    <input type="text" name="FamilyName" placeholder="Vui lòng nhập họ" class="form-control" id="" required>
+												</div>
+											</div>
+
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<label class="label" for="email">Tên</label>
+                                                    <input type="text" name="FirstName" placeholder="Vui lòng nhập tên" class="form-control" id="" required>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="Phone">Điện thoại</label>
+                                                    <input type="number" name="Phone" placeholder="Vui lòng nhập số điện thoại" class="form-control" id="" required>
+												</div>
+											</div>
+
+                                            <div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="Email">Email</label>
+                                                    <input type="email" name="Email" placeholder="Vui lòng nhập email" class="form-control" id="" required>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<label class="label" for="#">Nội dung</label>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Nội dung"></textarea>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Gửi" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+                        <div class="col-md-5 d-flex align-items-stretch">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4580.967328387898!2d106.66520984354645!3d10.776565905811385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fdf14cf6ff3%3A0x1e66d5fe08be7d06!2zxJDhuqFpIGjhu41jIE5nb-G6oWkgbmfhu68gVGluIGjhu41j!5e0!3m2!1svi!2s!4v1637735390103!5m2!1svi!2s" width="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+					</div>
+                        
+						<div class="row">
+							<div class="col-md-3">
+							    <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+			        		        <div class="text">
+				                        <p><span>Địa chỉ:</span> <a href="https://www.google.com/maps?ll=10.776525,106.667495&z=17&t=m&hl=vi&gl=US&mapclient=embed&cid=2190673555807436038">828 Sư Vạn Hạnh, Phường 12, Quận 10, Thành phố Hồ Chí Minh</a></p>
+				                     </div>
+			                    </div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		        <div class="icon d-flex align-items-center justify-content-center">
+			        			        <span class="fa fa-phone"></span>
+			        		        </div>
+                                    <div class="text">
+                                        <p><span>Điện thoại:</span> <a href="tel://02838632052">(+84 28) 38 632 052 - 38 629 232 </a></p>
+                                    </div>
+			                    </div>
+						    </div>
+
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		        <div class="icon d-flex align-items-center justify-content-center">
+			        			        <span class="fa fa-paper-plane"></span>
+			        		        </div>
+			        		        <div class="text">
+				                        <p><span>Email:</span> <a href="mailto:contact@huflit.edu.vn">contact@huflit.edu.vn</a></p>
+				                    </div>
+			                    </div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		        <div class="icon d-flex align-items-center justify-content-center">
+			        			        <span class="fa fa-globe"></span>
+			        		        </div>
+			        		        <div class="text">
+				                        <p><span>Website</span> <a href="/index.html">TDKT Online</a></p>
+				                    </div>
+			                     </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+</div>
+
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 mt-4">
+                <ul class="list-group list-group-flush lead">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Địa Chỉ:</span> 828 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Điện Thoại:</span> (+84 28) 38 632 052 - 38 629 232
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Fax:</span> (+84 28) 38 650 991
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Email:</span> contact@huflit.edu.vn
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div id='map' class="text-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.7455246406143!2d106.66613641659492!3d10.77572282842457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fdf14cf6ff3%3A0x1e66d5fe08be7d06!2zxJDhuqFpIGjhu41jIE5nb-G6oWkgbmfhu68gVGluIGjhu41j!5e0!3m2!1svi!2s!4v1638111753272!5m2!1svi!2s" 
+                    width="600" height="250" style="border:0; border-radius: 2px; right: 0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+  
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/fontawesome.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
