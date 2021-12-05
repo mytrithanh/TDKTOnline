@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Logo.jpg" type="image/x-icon">
+    <title>TDKT Online</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts/themify-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/777d2b88cf.js" crossorigin="anonymous"></script>
+
+
+    <!-- bootstrap-input-spinner Plugin -->
+    <script src="./js/bootstrap.input.spinner.js"></script>
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top top-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo d-inline-block">
+                        <img src="./image/logo.png" alt="TDKT Online" width="160" class="img-fluid">
+                    </div>
+        
+                      <div class="d-inline-block d-lg-none">
+                        <form class="form-inline" style="width: 100px; display: inline-block;">
+                          <input class="form-control mr-sm-2 ml-4" style="width: 100px; display: inline-block;" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                          <button class="btn btn-outline-success my-2 my-sm-0 " style="width: 40px" type="submit"><i class="ti-search text-center"></i></button>
+                        </form>  
+                      </div>
+                    </a>
+        
+                    <span class="shopping-cart d-lg-none btn-shopping-cart">
+                      <a href="#">
+                        <i class="ti-shopping-cart head-icon  btn">                    
+                          <span class="quantity" id="products-quantity-mobile">0</span>
+                        </i>
+                      </a>
+                    </span> 
+                  <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars btn-icon-menu"></span>
+                  </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav text-left">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Trang Chủ </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khóa học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giáo viên</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Phòng thi </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Phòng 1</a></li>
+                                <li><a class="dropdown-item" href="#"> Phòng 2 </a></li>
+                                <li><a class="dropdown-item" href="#"> Phòng 3 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Học phí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./news.html">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- sub header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <div class="container-fluid">
+                <form class="form-inline collapse navbar-collapse">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="ti-search"></i>
+                        Tìm</button>
+                </form>
+
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-id-badge"></i>
+                                Đăng nhập</button>
+                            <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-user"></i> Đăng
+                                ký</button>
+                            <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-comments"></i> Góp
+                                ý</button>
+                            <span class="favorite-cart ">
+                                <a href="#">
+                                    <i class="ti-heart head-icon ml-2 btn ">
+                                        <span class="heart-quantity" id="heart-quantity">0</span>
+                                    </i>
+                                </a>
+                            </span>
+
+                            <span class="shopping-cart d-none d-lg-inline-block">
+                                <a href="#">
+                                    <i class="ti-shopping-cart head-icon ml-2 btn">
+                                        <span class="quantity" id="products-quantity-pc">0</span>
+                                    </i>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- end header -->
+    <!-- list news -->
+    <h1 class="title-page-news text-center mt-4">TIN TỨC</h1>
+
+    <div class="news-section p-5">
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin1.jpeg" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Tổng lãnh sự Nhật Bản tại TP.HCM giao lưu...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> HUFLIT công bố điểm chuẩn xét tuyển học bạ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> HUFLIT công bố điểm trúng tuyển Đại học...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> HUFLIT nhận hồ sư xét tuyển học bạ đợt 5...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> HUFLIT công bố điểm chuẩn xét tuyển đại học...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="./deatailnews.html" class="title-new-link">LÃNH SỰ QUÁN NHẬT BẢN TẠI TP.HCM TRAO TẶNG HƠN 70 ĐẦU SÁCH QUÝ CHO TRƯỜNG HUFLIT</a></p>
+                    </div>
+                    <p class="time-new">29/11/2021</p>
+                    <p class="des-new">
+                        Sáng ngày 25/11, Ông Watanabe Nobuhiro - Tổng Lãnh sự Nhật Bản tại TP.HCM cùng ông Shiraishi Hideyuki - Lãnh sự Nhật Bản tại TP.HCM đã đến...
+                    </p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class=" d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://hocmai.vn/media/images/home/desktop/715x400t12.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> KHOA ĐÔNG PHƯƠNG_SINH VIÊN HUFLIT ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> GIAO LƯU TRỰC TUYẾN VỚI TRƯỜNG ĐẠI HỌC ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Giao lưu trực tuyến Trường Đại học Nữ Ewha...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật: Hội nghị Nghiên cứu khoa học ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật: Hội nghị Nghiên cứu khoa học sinh ...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">Chương trình học tốt 6-9</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Chương trình học tốt 6-9 dành cho tất cả các khoá học, giới thiệu đến các em các khoá học...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin2.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Cuộc thi Thiết kế Logo 30 năm HUFLIT</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật: Hội nghị Nghiên cứu khoa học sinh ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Giảng viên HUFLIT tiết lộ cách chọn sách IELTS ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Chiến dịch "Tiếp sức mùa thi” khó quên với sinh ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> ‘Đôi mắt cười’ từ phía bên kia hàng rào cách ly</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">“LÁ THƯ TRI ÂN” – GỬI YÊU THƯƠNG ĐẾN QUÝ THẦY CÔ GIÁO</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Vừa qua, Đoàn - Hội khoa Quan hệ Quốc tế đã tổ chức thành công chương trình “Lá Thư Tri Ân” với...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin3.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Công nghệ Thông tin HUFLIT - Điểm đến...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Ngành Quan hệ Quốc tế (HUFLIT) - Môi trường... </a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Tài chính – Ngân hàng: ngành học đáp ứng nhu...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> KHOA QHQT: TỔ CHỨC HỘI THẢO NGHIÊN CỨU ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Học Du lịch – Khách sạn tại HUFLIT ...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">CÙNG ĐOÀN KHOA DU LỊCH - KHÁCH SẠN TRI ÂN THẦY CÔ NHÂN NGÀY 20/11</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Vào ngày 20/11/2021 vừa qua, BCH Đoàn khoa Du Lịch – Khách Sạn đã tổ chức thành công Đêm...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin4.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa QTKD HUFLIT: 20 năm kinh nghiệm giảng...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Hội nhập, phát triển cùng nhóm ngành Ngoại...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật HUFLIT - Nơi chắp cánh những ước mơ</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Sinh viên ngành Luật tham dự các phiên tòa xét...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật tổ chức chương trình "Phiên tòa...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">KHOA ĐÔNG PHƯƠNG TỔ CHỨC CHUNG KẾT CUỘC THI HÙNG BIỆN TIẾNG VIỆT 2021</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Khoa Ngôn ngữ và Văn hóa Phương Đông vừa tổ chức thành công vòng chung kết Cuộc thi hùng biện tiếng Việt 2021 với ...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin5.jpg" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> KHOA DU LỊCH – KHÁCH SẠN TỔ CHỨC BCCĐ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Sinh viên HUFLIT tạo ấn tượng tốt khi thực...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật tổ chức chương trình tham quan ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Ngôn ngữ và Văn hóa phương Đông tổ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Quan hệ Quốc tế: Tổ chức Workshop...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">KHOA QUAN HỆ QUỐC TẾ: BÁO CÁO CHUYÊN ĐỀ “CÂU CHUYỆN NGÀNH PR VÀ VÒNG V Y COVID-19”</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Đại dịch Covid-19 đã tạo ra những thay đổi chưa từng có trước đây, ảnh hưởng rất lớn đến nhiều ngành nghề...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin6.jpeg" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Quan hệ Quốc tế: Tổ chức buổi Báo ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Đoàn khoa luật tổ chức buổi hội thảo chuy...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Khoa Luật tổ chức buổi tọa đàm “Kỹ năng...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Sinh viên Khoa Luật với tuần lễ Áo dài...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> KHOA QUAN HỆ QUỐC TẾ : TỔ CHỨC LỄ TỔNG...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">buổi tọa đàm "Kỹ năng nghiên cứu khoa học trong sinh viên ngành Luật"</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Giảng đường đại học là một phiên bản khác hoàn toàn so với môi trường học tập cấp trung học phổ thông (THPT). Thực ...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin7.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Thông báo về việc đánh giá kết quả rèn luyện...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Thông báo thay đổi thời gian tập trung đợt...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Thông báo về việc phát thẻ BHYT sinh viên ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Thông báo về việc bổ sung hồ sơ làm thẻ ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> Thông báo về thời gian và địa điểm nhận ...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">Thông báo v/v cài đặt VssID, cập nhật thông tin mua Bảo hiểm y tế của sinh viên HUFLIT</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Bảo hiểm y tế (BHYT) cho sinh viên năm học 2021 – 2022 có nhiều sự thay đổi trong công tác làm hồ sơ cấp thẻ...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin8.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> “Nét đẹp sinh viên HUFLIT 2020” - dần tìm...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> HUFLIT hiểu rõ “Tiếng Anh tốt là một lợi...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> LỄ KÝ KẾT, HỢP TÁC GIỮA HUFLIT VÀ HIỆP ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> “CHUYỆN NGHỀ GIÁO” - Đêm nhạc tri ân ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> “ĐÊM NHẠC VESHA (LOVE & SHARE) - Sự kiện...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">HÒM THƯ CỦA PHOTOVOICE - NHỮNG BỨC ẢNH BIẾT KỂ CHUYỆN VỀ THẦY CÔ HUFLIT</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new mb-4">Theo dòng sự kiện 20.11 - tháng của tri ân, hòa chung không khí các khoa nô nức tổ chức các cuộc thi chào...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="d-flex justify-content-center mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./image/news/tin9.png" alt="" class="new-img img-fluid">
+                    <div id="wrapper">
+                        <div class="accordion">
+                            <div class="accordion-item acctive">
+                                <div class="accordion-header">
+                                    <h5>Tin liên quan</h5>
+                                    <i class="arrow fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i>
+
+                                            “KHỞI NGHIỆP – NỘI LỰC CỦA BẠN CÓ ĐỦ LỚN?”</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i>
+
+                                            TEDxHUFLIT: Sự kiện tầm cỡ quốc tế do ...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i>
+
+                                            ĐẶC SẮC LỄ HỘI ĐÔNG PHƯƠNG 2020</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i>
+                                            LỄ KÝ KẾT BIÊN BẢN HỢP TÁC GIỮA...</a></li>
+                                        <li><a href="#"><i class="fas fa-ellipsis-v"></i> BUỔI SINH HOẠT CÔNG DÂN CỦA CÁC TÂN...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="block-text-des">
+                        <p class="title-new"><a href="" class="title-new-link">TALKSHOW "ONBOARD: SỨC HÚT CỦA MÔI TRƯỜNG LÀM VIỆC ĐA QUỐC GIA"</a></p>
+                    </div>
+                    <p class="time-new">4/12/2021</p>
+                    <p class="des-new">Trong thời đại hội nhập, toàn cầu hóa là một xu hướng tất yếu nhằm tạo môi trường thuận lợi cho các cuộc...</p>
+                    <div class="more-new">
+                        <a href="#" class="more-new-link">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      
+    
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-5">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+    </div>
+    <!-- end list news -->
+    <!-- footer -->
+    <div div class="footer">
+        <div class="container-fluid">
+            <div class="container1">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>KHOA ĐÀO TẠO</h4>
+                            <ul>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Ngoại Ngữ</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Công Nghệ Thông Tin</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Đông Phương</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Quản trị Kinh doanh</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Quan hệ Quốc tế</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>KHÓA HỌC</h4>
+                            <ul>
+                                <li><a href="#"><i class="ti-angle-right"></i> 5 khóa học mới</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Trung học cơ sở</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Trung học phổ thông</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Cao đẳng - Đại học</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-col">
+                            <h4>HỌC VIÊN</h4>
+                            <ul>
+                                <li><a href="#"><i class="ti-angle-right"></i> Xem điểm</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Xem học phí</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Xem học bổng</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Hỗ trợ học viên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item footer-li">
+                                <h3 class="font-weight-bold">
+                                    <a href="./index.html"><img src="./image/logo.png" alt="" class="mt-0 img-logo-footer" width="25%"></a>
+                                </h3>
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/location.png" width="24px" alt="">
+                                    Địa Chỉ:</span> 828 Sư Vạn Hạnh, Phường 13, Quận 10,
+                                    TP.HCM
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold ">
+                                    <img src="./image/phone-call.png" width="24px" alt="">
+                                    Điện Thoại:</span> (+84 28) 38 632 052 - 38 629 232
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/fax.png" width="24px" alt="">
+                                    Fax:</span> (+84 28) 38 650 991
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/email.png" width="24px" alt="">
+                                    Email:</span> contact@huflit.edu.vn
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coppy-right">
+        <p class="copyright-text text-center">Copyright © 2021 TDKT ONLINE</p>
+    </div>
+
+</body>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.accordion-header').click(function() {
+           $(this).parent().toggleClass('acctive')
+           $(this).parent().children('.accordion-body').slideToggle();
+        });
+    })
+</script>
+</body>
+
+</html>

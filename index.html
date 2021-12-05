@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Logo.jpg" type="image/x-icon">
     <title>TDKT Online</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fonts/themify-icons.css">
@@ -16,918 +18,1796 @@
     <!-- bootstrap-input-spinner Plugin -->
     <script src="./js/bootstrap.input.spinner.js"></script>
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-
 
 </head>
-<body>
-  <!-- header -->
+
+<body class="home">
+    <!-- header -->
     <div class="header-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top top-header">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                  <p class="logo d-inline-block">TDKT Online</p>
-    
-                  <div class="d-inline-block d-lg-none">
-                    <form class="form-inline" style="width: 100px; display: inline-block;">
-                      <input class="form-control mr-sm-2 ml-4" style="width: 100px; display: inline-block;" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0 " style="width: 40px" type="submit"><i class="ti-search text-center"></i></button>
-                    </form>  
-                  </div>
-                </a>
-    
-                <span class="shopping-cart ml-5 d-lg-none">
-                  <a href="#">
-                    <i class="ti-shopping-cart head-icon  btn">                    
-                      <span class="quantity" id="products-quantity-mobile">0</span>
-                    </i>
-                  </a>
-                </span> 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-                <ul class="navbar-nav text-left">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Trang Chủ </span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Khóa học</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Giáo viên</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Phòng thi  </a>
-                     <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="#"> Phòng 1</a></li>
-                     <li><a class="dropdown-item" href="#"> Phòng 2 </a></li>
-                     <li><a class="dropdown-item" href="#"> Phòng 3 </a></li>
-                     </ul>
-                 </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Học phí</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Tin Tức</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Pages/contact.html">Liên Hệ</a>
-                  </li>
-                </ul>
-              </div>
+                    <div class="logo d-inline-block">
+                        <img src="./image/logo.png" alt="TDKT Online" width="160" class="img-fluid">
+                    </div>
+        
+                      <div class="d-inline-block d-lg-none">
+                        <form class="form-inline" style="width: 100px; display: inline-block;">
+                          <input class="form-control mr-sm-2 ml-4" style="width: 100px; display: inline-block;" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                          <button class="btn btn-outline-success my-2 my-sm-0 " style="width: 40px" type="submit"><i class="ti-search text-center"></i></button>
+                        </form>  
+                      </div>
+                    </a>
+        
+                    <span class="shopping-cart d-lg-none btn-shopping-cart">
+                      <a href="#">
+                        <i class="ti-shopping-cart head-icon  btn">                    
+                          <span class="quantity" id="products-quantity-mobile">0</span>
+                        </i>
+                      </a>
+                    </span> 
+                  <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars btn-icon-menu"></span>
+                  </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav text-left">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang Chủ </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khóa học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giáo viên</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Phòng thi </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> Phòng 1</a></li>
+                                <li><a class="dropdown-item" href="#"> Phòng 2 </a></li>
+                                <li><a class="dropdown-item" href="#"> Phòng 3 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Học phí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-<!-- sub header -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
-        <div class="container-fluid">
-            <form class="form-inline collapse navbar-collapse">
-                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="ti-search"></i> Tìm</button>
-            </form>  
-           
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item">
-                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-id-badge"></i> Đăng nhập</button>
-                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-user"></i> Đăng ký</button>
-                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-comments"></i> Góp ý</button>  
-                <span class="favorite-cart ">
-                  <a href="#">
-                    <i class="ti-heart head-icon ml-2 btn ">                    
-                      <span class="heart-quantity" id="heart-quantity">0</span>
-                    </i>
-                  </a>
-                </span> 
+        </nav>
+        <!-- sub header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <div class="container-fluid">
+                <form class="form-inline collapse navbar-collapse">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="ti-search"></i>
+                        Tìm</button>
+                </form>
 
-                <span class="shopping-cart d-none d-lg-inline-block">
-                  <a href="#">
-                    <i class="ti-shopping-cart head-icon ml-2 btn">                    
-                        <span class="quantity" id="products-quantity-pc">0</span>
-                    </i>
-                  </a>
-                </span>            
-            </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-id-badge"></i>
+                                Đăng nhập</button>
+                            <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-user"></i> Đăng
+                                ký</button>
+                            <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-comments"></i> Góp
+                                ý</button>
+                            <span class="favorite-cart ">
+                                <a href="#">
+                                    <i class="ti-heart head-icon ml-2 btn ">
+                                        <span class="heart-quantity" id="heart-quantity">0</span>
+                                    </i>
+                                </a>
+                            </span>
+
+                            <span class="shopping-cart d-none d-lg-inline-block">
+                                <a href="#">
+                                    <i class="ti-shopping-cart head-icon ml-2 btn">
+                                        <span class="quantity" id="products-quantity-pc">0</span>
+                                    </i>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
 
     <!-- end header -->
 
 
-<!-- slide -->
+    <!-- slide -->
     <div class="slider">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./image/slide/laptrinhweb.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/hoahoc.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/ctdl.jpg" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/cntt.jpg" alt="fourth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/thuvien.jpg" alt="fifth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/toan.jpg" alt="sixth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/totnghiep.jpg" alt="seventh slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/truong.jpg" alt="eighth slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./image/slide/vanphong.jpg" alt="ninth slide">
-              </div>
+                <div class="carousel-item active slide-1">
+                    <div class="d-block w-100 slide-1 slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 slide-2 slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 slide-3 slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 slide-4 slide"></div>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
-          </div>
+        </div>
     </div>
-<!-- end slide -->
-  <!-- ./Tabs -->
-  <section id="tabs">
+    <!-- end slide -->
+    <!-- intro -->
+    <section id="learn" class="p-1">
+        <div class="container text-justify">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="image/Logo.jpg" class="img-fluid" width="400px" alt="" />
+                </div>
+                <div class="col-md p-5">
+                    <h2>TỔNG QUAN</h2>
+                    <p class="lead">
+                        Hãy cùng trải nghiệm các khóa học tại TDKT Online. Với chính sách tận dụng được sự phát
+                        triển của các ứng dụng Online, nguồn học liệu từ giáo sư các trường Đại học hàng đầu thế
+                        giới, được giảng dạy và dẫn dắt bởi những chuyên gia, luôn cập nhập đầy đủ các khóa học
+                        từ trung học cơ sở đến Đại Học.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-5 text-light bg-light">
+        <div class="container text-justify">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>CHỨNG CHỈ</h2>
+                    <p class="lead">
+                        Các chứng chỉ giảng dạy của chúng tôi được công nhận trên toàn thế giới là tiêu chuẩn chất lượng quốc tế. Chúng tôi đều có các chứng chỉ và khóa học dành cho các giáo viên mới cũng như đã có kinh nghiệm.
+                    </p>
+                    <h2>MỤC TIÊU</h2>
+                    <p class="lead">
+                        Mục tiêu dạy học là trạng thái phát triển nhân cách được dự kiến trước của học viên sau một quá trình đào tạo, 
+                        dựa trên yêu cầu phát triển của đất nước, 
+                        của thị trường lao động. Trạng thái phát triển nhân cách được thể hiện ở phẩm chất và năng lực của người được đào tạo.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="./image/target.png" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end intro -->
+    <!-- about -->
+    <div class="about mt-3">
+        <div class="container">
+            <h2 class="section-title h1 text-center">LÝ DO BẠN NÊN HỌC CÙNG TDKT ONLINE</h2>
+            <div class="row-custom">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="img-icon-about d-inline-block">
+                            <img src="./image/svg/about-fire.svg" alt="">
+                        </div>
+                        <strong class="title-about">Tiến bộ nhanh chóng</strong>
+                        <p class="sub-text-about">Các nghiên cứu đã chứng minh các khóa học của chúng tôi giảng dễ hiểu
+                            và học mọi lúc, hiệu quả rõ rệt.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-icon-about d-inline-block"><img src="./image/svg/king.svg" alt="" width="33px"
+                                height="43px"></div>
+                        <strong class="title-about">Truyền động lực học</strong>
+                        <p class="sub-text-about">Chúng tôi giúp người học dễ dàng xây dựng thói quen học tập, qua những
+                            trò chơi trước mỗi buổi học.</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="img-icon-about d-inline-block"><img src="./image/svg/about-check.svg" alt=""></div>
+                        <strong class="title-about">Giáo viên nhiệt tình</strong>
+                        <p class="sub-text-about">Giáo viên của chúng tôi luôn là những giáo viên và giảng viên ưu tú có
+                            trình độ từ thạc sỹ trở lên.</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="img-icon-about d-inline-block"><img src="./image/svg/earth.svg" alt="" width="44px">
+                        </div>
+                        <strong class="title-about">Kết nối với nhiều bạn bè </strong>
+                        <p class="sub-text-about">Khi học còn có cơ hội kết nối thêm nhiều bạn bè trên toàn quốc để trao
+                            đổi việc học dễ dàng hơn.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- ./Tabs -->
+    <section id="tabs">
+        <div class="container">
+            <h6 class="section-title h1 text-left"><i class="ti-ruler"></i> Danh sách khóa học</h6>
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">
+                                5 khóa học mới
+                                <img src="./image/new-logo.png" width="80" alt="">
+                            </a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Trung học cơ sở</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Trung học phổ thông</a>
+                            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about"
+                                role="tab" aria-controls="nav-about" aria-selected="false">Cao đẳng - Đại học </a>
+                        </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <!-- ***************************************************************** -->
+                            <div class="container">
+                                <div class="shop-default shop-cards shop-tech">
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/5KhoaHocMoiNhat/TCC.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase ">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Toán Cao Cấp
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            “Giáo trình Toán cao cấp” dành cho sinh viên hệ đại trà
+                                                        </p>
+                                                        <p class="teacher text-left">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">999.999 ₫</p>
+                                                            <p class="sale text-left">1.000.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number1" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition1"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/5KhoaHocMoiNhat/ltw.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Lập Trình Web
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Vậy là bạn có hứng thú với lập trình web và muốn trở thành
+                                                            một web developer? Trước tiên, xin chúc mừng vì bạn đã có
+                                                            một lựa chọn khá đúng đắn.
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn B</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">1.000.000 ₫</p>
+                                                            <p class="sale text-left">1.500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number2" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition2"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/5KhoaHocMoiNhat/2ad4094e510c177aad24c21337d0bc44.jpg"
+                                                            class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Toán Hóa Học
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Giải bài tập hóa học lớp 10 đầy đủ công thức, lý thuyết,
+                                                            phương trình hóa học, chuyên đề hóa học SGK 10 giúp để học
+                                                            tốt hóa học 10.
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn C</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">500.000 ₫</p>
+                                                            <p class="sale text-left">0 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number3" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition3"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/5KhoaHocMoiNhat/vat-li.png"
+                                                            class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Vật Lý
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Vật Lý
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn D</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">500.000 ₫</p>
+                                                            <p class="sale text-left">0 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number4" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition4"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/5KhoaHocMoiNhat/ngu van.jpg"
+                                                            class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Ngữ Văn 12
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Tác giả/ Dịch giả: Bộ Giáo Dục Và Đào Tạo
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">500.000 ₫</p>
+                                                            <p class="sale text-left">0 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number5" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" id="" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition5"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ***************************************************************** -->
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <!-- #22222222222222222222222222222222222222222222222222222222222 -->
+                            <!-- ***************************************************************** -->
+                            <div class="container">
+                                <div class="shop-default shop-cards shop-tech">
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THCS/toan6.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase ">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Toán 6
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Khóa học môn toán lớp 6
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">299.000 ₫</p>
+                                                            <p class="sale text-left">500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number1" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition1"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THCS/hoa8.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Hóa 8
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Môn hóa lớp 8 học dễ hiểu
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn B</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">299.000 ₫</p>
+                                                            <p class="sale text-left">500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number2" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition2"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THCS/vatly7.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Vật Lý 7
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Môn vật lý lớp 7
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn C</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">299.000 ₫</p>
+                                                            <p class="sale text-left">500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number3" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition3"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THCS/sinhhoc9.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Sinh Học 9
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Môn sinh học lớp 9
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn D</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">299.000 ₫</p>
+                                                            <p class="sale text-left">500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number4" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition4"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THCS/tienganhtangcuong.jpg"
+                                                            class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            TA Tăng Cường
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Môn tiếng anh tăng cường cho khối THCS
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">299.000 ₫</p>
+                                                            <p class="sale text-left">500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number5" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" id="" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition5"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ***************************************************************** -->
+
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <!-- #3333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+                            <div class="container">
+                                <div class="shop-default shop-cards shop-tech">
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THPT/toan12.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase ">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Toán 12
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Khóa học môn toán lớp 12 Học Kì 1
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">399.000 ₫</p>
+                                                            <p class="sale text-left">600.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number1" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition1"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THPT/dot-pha-8-ki-thi-thpt-quoc-gia-mon-vat-ly.jpg"
+                                                            class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Đột Phá 8+ Vật Lý
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Đột Phá 8+ Vật Lý học dễ hiểu, tiếp cận điểm 8 9
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn B</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">899.000 ₫</p>
+                                                            <p class="sale text-left">2.000.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number2" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition2"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THPT/A00.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Ôn Thi Khối A00
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Ôn Thi Đại Học Khối A00
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn C</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">1.999.999 ₫</p>
+                                                            <p class="sale text-left">2.500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number3" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition3"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THPT/nguvan12.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Ngữ Văn 12
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Môn Ngữ Văn lớp 12
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn D</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">299.000 ₫</p>
+                                                            <p class="sale text-left">500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number4" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition4"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/THPT/toan9+.png" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Đột Phá 9+ Toán
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Ôn thi môn toán đạt điểm 9 10
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">899.000 ₫</p>
+                                                            <p class="sale text-left">1.500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number5" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" id="" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition5"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ************************************************************* -->
+                        </div>
+                        <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                            <!-- #44444444444444444444444444444444444444444444444444444444444444444 -->
+                            <div class="container">
+                                <div class="shop-default shop-cards shop-tech">
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/ĐH-CĐ/ielts.png" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase ">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            IELTS
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Khóa học IELTS 3 tháng
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">9.999.999 ₫</p>
+                                                            <p class="sale text-left">15.000.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number1" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition1"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/ĐH-CĐ/tieng-anh-giao-tiep.jpg"
+                                                            class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            Tiếng Anh Giao Tiếp
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Khóa Học Tiếng Anh Giao Tiếp Cơ Bản
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn B</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">2.899.000 ₫</p>
+                                                            <p class="sale text-left">5.000.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number2" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition2"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/ĐH-CĐ/toefl.png" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            TOEFL
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Học Ôn Luyện Thi Chứng Chỉ TOEFL
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn C</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">2.999.000 ₫</p>
+                                                            <p class="sale text-left">6.500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number3" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition3"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/ĐH-CĐ/toeic.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            TOEIC
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Ôn Luyện Thi TOEIC 600 Điểm
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn D</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">2.599.000 ₫</p>
+                                                            <p class="sale text-left">2.800.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number4" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition4"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-3">
+                                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
+                                                <div class="block-image">
+                                                    <a href="#">
+                                                        <img src="./image/ĐH-CĐ/mos.jpg" class="img-center">
+                                                    </a>
+                                                    <span
+                                                        class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
+                                                </div>
+                                                <div class="block-body text-center">
+                                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
+                                                        <a href="#">
+                                                            MOS
+                                                        </a>
+                                                    </h3>
+                                                    <div class="block-text-des">
+                                                        <p class="product-description text-left">
+                                                            Ôn Luyện Thi Chứng Chỉ MOS
+                                                        </p>
+                                                        <p class="teacher">
+                                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="product-colors mt-2">
+                                                        <div class="color-switch float-wrapper">
+                                                            <p class="price text-left">899.000 ₫</p>
+                                                            <p class="sale text-left">1.500.000 ₫</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <input type="number" id="how-number5" placeholder="1"
+                                                            value="1" />
+                                                    </p>
+                                                    <div class="product-buttons mt-4">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-2">
+                                                                <button type="button" id="" class="btn-icon add-heart"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Favorite">
+                                                                    <i class="fa fa-heart text-heart"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-2">
+                                                                <button type="button" class="btn-icon"
+                                                                    data-toggle="tooltip" data-placement="top" title=""
+                                                                    data-original-title="Compare">
+                                                                    <i class="fa fa-share"></i>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                                <button type="button" id="addition5"
+                                                                    class="btn btn-block btn-primary btn-circle btn-icon-left">
+                                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Tabs -->
+
+    <!-- footer -->
     <div class="container">
-      <h6 class="section-title h1 text-left"><i class="ti-ruler"></i> Danh sách khóa học</h6>
-      <div class="row">
-        <div class="col-xs-12 ">
-          <nav>
-            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-                5 khóa học mới
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/New_logo.svg/2560px-New_logo.svg.png" width="80" alt="">
-              </a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Trung học cơ sở</a>
-              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Trung học phổ thông</a>
-              <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">Cao đẳng - Đại học </a>
-            </div>
-          </nav>
-          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-<!-- ***************************************************************** -->
-            <div class="container">
-                <div class="shop-default shop-cards shop-tech">
-                    <div class="row">
-                        <div class="col mb-3">
-                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                <div class="block-image">
-                                    <a href="#">
-                                        <img src="./image/TCC.jpg" class="img-center">
-                                    </a>
-                                    <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase ">Mới</span>
-                                </div>
-                                <div class="block-body text-center">
-                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                        <a href="#">
-                                            Toán Cao Cấp
-                                        </a>
-                                    </h3>
-                                    <div class="block-text-des">
-                                        <p class="product-description text-left">
-                                            “Giáo trình Toán cao cấp” dành cho sinh viên hệ đại trà
-                                        </p>
-                                        <p class="teacher text-left">
-                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-colors mt-2">
-                                        <div class="color-switch float-wrapper">
-                                            <p class="price text-left">999.999 ₫</p>
-                                            <p class="sale text-left">1.000.000 ₫</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <input type="number" id="how-number1" placeholder="0" value="0"/>
-                                    </p>
-                                    <div class="product-buttons mt-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                    <i class="fa fa-heart text-heart"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                    <i class="fa fa-share"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <button type="button" id="addition1" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                                </button>
+        <div class="container-fluid text-justify">
+            <div class="row news">
+                <div class="col-md-6">
+                    <h6 class="section-title h1 text-left mt-2"><i class="ti-ruler"></i> TIN TỨC</h6>
+                    <article class="test">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <article class="item-news item-news-common">
+                                    <h5 class="tilte-news">
+                                        <a href="./deatailnews.html">LÃNH SỰ QUÁN NHẬT BẢN TẠI TP.HCM TRAO TẶNG HƠN 70...</a>
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="thumb-art">
+                                                <img src="./image/news/tin1.jpeg" alt="" class="img-fluid">
                                             </div>
                                         </div>
+                                        <div class="col-md-6">
+                                            <p class="description">
+                                                Sáng ngày 25/11, Ông Watanabe Nobuhiro - Tổng Lãnh sự Nhật Bản tại
+                                                TP.HCM
+                                                cùng ông Shiraishi Hideyuki...
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
+                            </div>
+                            <div class="col-md-8">
                             </div>
                         </div>
-                
-                        <div class="col mb-3">
-                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                <div class="block-image">
-                                    <a href="#">
-                                        <img src="./image/ltw.jpg" class="img-center">
-                                    </a>
-                                    <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                                </div>
-                
-                                <div class="block-body text-center">
-                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                        <a href="#">
-                                            Lập Trình Web
-                                        </a>
-                                    </h3>
-                                    <div class="block-text-des">
-                                        <p class="product-description text-left">
-                                            Vậy là bạn có hứng thú với lập trình web và muốn trở thành một web developer? Trước tiên, xin chúc mừng vì bạn đã có một lựa chọn khá đúng đắn. 
-                                        </p>
-                                        <p class="teacher">
-                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn B</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-colors mt-2">
-                                        <div class="color-switch float-wrapper">
-                                            <p class="price text-left">1.000.000 ₫</p>
-                                            <p class="sale text-left">1.500.000 ₫</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <input type="number" id="how-number2" placeholder="0" value="0"/>
-                                    </p>
-                                    <div class="product-buttons mt-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                    <i class="fa fa-heart text-heart"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                    <i class="fa fa-share"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <button type="button" id="addition2" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                                </button>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <article class="item-news item-news-common">
+                                    <h5 class="title-news">
+                                        <a href="#">“LÁ THƯ TRI ÂN” – GỬI YÊU THƯƠNG ĐẾN QUÝ THẦY CÔ...</a>
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="thumb-art">
+                                                <img src="./image/news/tin2.png" alt="" class="img-fluid">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col mb-3">
-                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                            <div class="block-image">
-                                <a href="#">
-                                    <img src="./image/2ad4094e510c177aad24c21337d0bc44.jpg" class="img-center">
-                                </a>
-                                <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                            </div>
-                            <div class="block-body text-center">
-                                <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                    <a href="#">
-                                        Toán Hóa Học
-                                    </a>
-                                </h3>
-                                <div class="block-text-des">
-                                    <p class="product-description text-left">
-                                        Giải bài tập hóa học lớp 10 đầy đủ công thức, lý thuyết, phương trình hóa học, chuyên đề hóa học SGK 10 giúp để học tốt hóa học 10. 
-                                    </p>
-                                    <p class="teacher">
-                                        Giáo viên: <a href="" class="name-teacher">Nguyễn Văn C</a>
-                                    </p>
-                                </div>
-                                <div class="product-colors mt-2">
-                                    <div class="color-switch float-wrapper">
-                                        <p class="price text-left">500.000 ₫</p>
-                                        <p class="sale text-left">0 ₫</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type="number" id="how-number3" placeholder="0" value="0"/>
-                                </p>
-                                <div class="product-buttons mt-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                <i class="fa fa-heart text-heart"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <button type="button" id="addition3" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                            </button>
+                                        <div class="col-md-6">
+                                            <p class="description">
+                                                Vừa qua, Đoàn - Hội khoa Quan hệ Quốc tế đã tổ chức thành công chương
+                                                trình
+                                                “Lá Thư Tri Ân” với mục đích gửi lời...
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </article>
+                                <article class="items-news item-news-common">
+                                    <h5 class="title-news">
+                                        <a href="#">CÙNG ĐOÀN KHOA DU LỊCH - KHÁCH SẠN TRI ÂN THẦY CÔ...</a>
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="thumb-art">
+                                                <img src="./image/news/tin3.png" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="description">
+                                                Vào ngày 20/11/2021 vừa qua, BCH Đoàn khoa Du Lịch – Khách Sạn đã tổ
+                                                chức
+                                                thành công Đêm nhạc...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="items-news item-news-common">
+                                    <h5 class="title-news">
+                                        <a href="#">KHOA ĐÔNG PHƯƠNG TỔ CHỨC CHUNG KẾT CUỘC THI HÙNG...</a>
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="thumb-art">
+                                                <img src="./image/news/tin4.png" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="description">
+                                                Khoa Ngôn ngữ và Văn hóa Phương Đông vừa tổ chức thành công vòng
+                                                chung kết Cuộc thi hùng biện tiếng Việt 2021 với chủ đề “Sinh viên và
+                                                việc giữ gìn sự trong...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="items-news item-news-common">
+                                    <h5 class="title-news">
+                                        <a href="#">KHOA QUAN HỆ QUỐC TẾ: BÁO CÁO CHUYÊN ĐỀ “CÂU...</a>
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="thumb-art">
+                                                <img src="./image/news/tin5.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="description">
+                                                Đại dịch Covid-19 đã tạo ra những thay đổi chưa từng có trước đây, ảnh
+                                                hưởng rất lớn đến nhiều ngành nghề, đặc biệt là những ngành có sự kết
+                                                nối toàn cầu như lĩnh vực truyền thông...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
 
-                    <div class="col mb-3">
-                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                            <div class="block-image">
-                                <a href="#">
-                                    <img src="./image/vat-li.png" class="img-center">
-                                </a>
-                                <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                            </div>
-                            <div class="block-body text-center">
-                                <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                    <a href="#">
-                                        Vật Lý
-                                    </a>
-                                </h3>
-                                <div class="block-text-des">
-                                    <p class="product-description text-left">
-                                        Vật Lý
-                                    </p>
-                                    <p class="teacher">
-                                        Giáo viên: <a href="" class="name-teacher">Nguyễn Văn D</a>
-                                    </p>
-                                </div>
-                                <div class="product-colors mt-2">
-                                    <div class="color-switch float-wrapper">
-                                        <p class="price text-left">500.000 ₫</p>
-                                        <p class="sale text-left">0 ₫</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type="number" id="how-number4" placeholder="0" value="0"/>
-                                </p>
-                                <div class="product-buttons mt-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                <i class="fa fa-heart text-heart"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <button type="button" id="addition4" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
+                </article>
+                <div class="col-md-6">
+                    <h6 class="section-title h1 text-left mt-2"><i class="ti-comments"></i> THẢO LUẬN</h6>
+                    <div class="cbox">
+                        <!-- chat -->
+                        <section class="msger">
+                            <header class="msger-header">
+                              <div class="msger-header-title">
+                                <i class="fa fa-comment-alt"></i> Đoạn chat thế giới
+                              </div>
+                              <div class="msger-header-options">
+                                <span><i class="fa fa-cog"></i></span>
+                              </div>
+                            </header>
+                          
+                            <main class="msger-chat">
+                              <div class="msg left-msg">
+                                <div class="msg-img" id="img-chat-1"></div>
+                          
+                                <div class="msg-bubble bg-yellow">
+                                  <div class="msg-info">
+                                    <div class="msg-info-name">Luôn Vui Tươi</div>
+                                    <div class="msg-info-time">12:45</div>
+                                  </div>
+                          
+                                  <div class="msg-text">
+                                    Xin chào, mình là Thành mình đang học Toeic trên TDKT. 😄
+                                  </div>
+                                </div>
+                              </div>
 
-                        <div class="col mb-3">
-                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                            <div class="block-image">
-                                <a href="#">
-                                    <img src="./image/ngu van.jpg" class="img-center">
-                                </a>
-                                <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                            </div>
-                            <div class="block-body text-center">
-                                <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                    <a href="#">
-                                        Ngữ Văn 12
-                                    </a>
-                                </h3>
-                                <div class="block-text-des">
-                                    <p class="product-description text-left">
-                                        Tác giả/ Dịch giả: Bộ Giáo Dục Và Đào Tạo
-                                    </p>
-                                    <p class="teacher">
-                                        Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
-                                    </p>
+                              <div class="msg right-msg">
+                                <div
+                                 class="msg-img" id="img-chat-2"></div>
+                          
+                                <div class="msg-bubble bg-light">
+                                  <div class="msg-info">
+                                    <div class="msg-info-name">User</div>
+                                    <div class="msg-info-time">12:46</div>
+                                  </div>
+                                  <div class="msg-text">
+                                      web học rất hay và uy tín mình cho 5 saoo.⭐⭐⭐⭐⭐
+                                  </div>
                                 </div>
-                                <div class="product-colors mt-2">
-                                    <div class="color-switch float-wrapper">
-                                        <p class="price text-left">500.000 ₫</p>
-                                        <p class="sale text-left">0 ₫</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type="number" id="how-number5" placeholder="0" value="0"/>
-                                </p>
-                                <div class="product-buttons mt-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-2">
-                                            <button type="button" id="" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                <i class="fa fa-heart text-heart"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <button type="button" id="addition5" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
+                              </div>
+                            </main>
+                          
+                            <form class="msger-inputarea">
+                              <input type="text" class="msger-input" placeholder="Nhập nội dung...">
+                              <button type="submit" class="msger-send-btn">Gửi</button>
+                            </form>
+                          </section>
+                        <!-- end chat -->
                     </div>
                 </div>
-            </div>
-          
-<!-- ***************************************************************** -->
-
-            </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <!-- #22222222222222222222222222222222222222222222222222222222222 -->
-                        <!-- ***************************************************************** -->
-            <div class="container">
-                <div class="shop-default shop-cards shop-tech">
-                    <div class="row">
-                        <div class="col mb-3">
-                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                <div class="block-image">
-                                    <a href="#">
-                                        <img src="./image/TCC.jpg" class="img-center">
-                                    </a>
-                                    <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase ">Mới</span>
-                                </div>
-                                <div class="block-body text-center">
-                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                        <a href="#">
-                                            Toán Cao Cấp
-                                        </a>
-                                    </h3>
-                                    <div class="block-text-des">
-                                        <p class="product-description text-left">
-                                            “Giáo trình Toán cao cấp” dành cho sinh viên hệ đại trà
-                                        </p>
-                                        <p class="teacher">
-                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-colors mt-2">
-                                        <div class="color-switch float-wrapper">
-                                            <p class="price text-left">999.999 ₫</p>
-                                            <p class="sale text-left">1.000.000 ₫</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <input type="number" id="how-number1" placeholder="0" value="0"/>
-                                    </p>
-                                    <div class="product-buttons mt-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                    <i class="fa fa-heart text-heart"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                    <i class="fa fa-share"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <button type="button" id="addition1" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="col mb-3">
-                            <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                                <div class="block-image">
-                                    <a href="#">
-                                        <img src="./image/ltw.jpg" class="img-center">
-                                    </a>
-                                    <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                                </div>
-                
-                                <div class="block-body text-center">
-                                    <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                        <a href="#">
-                                            Lập Trình Web
-                                        </a>
-                                    </h3>
-                                    <div class="block-text-des">
-                                        <p class="product-description text-left">
-                                            Vậy là bạn có hứng thú với lập trình web và muốn trở thành một web developer? Trước tiên, xin chúc mừng vì bạn đã có một lựa chọn khá đúng đắn. 
-                                        </p>
-                                        <p class="teacher">
-                                            Giáo viên: <a href="" class="name-teacher">Nguyễn Văn B</a>
-                                        </p>
-                                    </div>
-                                    <div class="product-colors mt-2">
-                                        <div class="color-switch float-wrapper">
-                                            <p class="price text-left">1.000.000 ₫</p>
-                                            <p class="sale text-left">1.500.000 ₫</p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <input type="number" id="how-number2" placeholder="0" value="0"/>
-                                    </p>
-                                    <div class="product-buttons mt-4">
-                                        <div class="row align-items-center">
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                    <i class="fa fa-heart text-heart"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-2">
-                                                <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                    <i class="fa fa-share"></i>
-                                                </button>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <button type="button" id="addition2" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                    <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col mb-3">
-                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                            <div class="block-image">
-                                <a href="#">
-                                    <img src="./image/2ad4094e510c177aad24c21337d0bc44.jpg" class="img-center">
-                                </a>
-                                <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                            </div>
-                            <div class="block-body text-center">
-                                <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                    <a href="#">
-                                        Toán Hóa Học
-                                    </a>
-                                </h3>
-                                <div class="block-text-des">
-                                    <p class="product-description text-left">
-                                        Giải bài tập hóa học lớp 10 đầy đủ công thức, lý thuyết, phương trình hóa học, chuyên đề hóa học SGK 10 giúp để học tốt hóa học 10. 
-                                    </p>
-                                    <p class="teacher">
-                                        Giáo viên: <a href="" class="name-teacher">Nguyễn Văn C</a>
-                                    </p>
-                                </div>
-                                <div class="product-colors mt-2">
-                                    <div class="color-switch float-wrapper">
-                                        <p class="price text-left">500.000 ₫</p>
-                                        <p class="sale text-left">0 ₫</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type="number" id="how-number3" placeholder="0" value="0"/>
-                                </p>
-                                <div class="product-buttons mt-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                <i class="fa fa-heart text-heart"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <button type="button" id="addition3" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-3">
-                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                            <div class="block-image">
-                                <a href="#">
-                                    <img src="./image/vat-li.png" class="img-center">
-                                </a>
-                                <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                            </div>
-                            <div class="block-body text-center">
-                                <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                    <a href="#">
-                                        Vật Lý
-                                    </a>
-                                </h3>
-                                <div class="block-text-des">
-                                    <p class="product-description text-left">
-                                        Vật Lý
-                                    </p>
-                                    <p class="teacher">
-                                        Giáo viên: <a href="" class="name-teacher">Nguyễn Văn D</a>
-                                    </p>
-                                </div>
-                                <div class="product-colors mt-2">
-                                    <div class="color-switch float-wrapper">
-                                        <p class="price text-left">500.000 ₫</p>
-                                        <p class="sale text-left">0 ₫</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type="number" id="how-number4" placeholder="0" value="0"/>
-                                </p>
-                                <div class="product-buttons mt-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                <i class="fa fa-heart text-heart"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <button type="button" id="addition4" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                        <div class="col mb-3">
-                        <div class="block product no-border z-depth-2-top z-depth-2--hover">
-                            <div class="block-image">
-                                <a href="#">
-                                    <img src="./image/ngu van.jpg" class="img-center">
-                                </a>
-                                <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-pink text-uppercase">Mới</span>
-                            </div>
-                            <div class="block-body text-center">
-                                <h3 class="heading heading-5 strong-600 text-capitalize text-left">
-                                    <a href="#">
-                                        Ngữ Văn 12
-                                    </a>
-                                </h3>
-                                <div class="block-text-des">
-                                    <p class="product-description text-left">
-                                        Tác giả/ Dịch giả: Bộ Giáo Dục Và Đào Tạo
-                                    </p>
-                                    <p class="teacher">
-                                        Giáo viên: <a href="" class="name-teacher">Nguyễn Văn A</a>
-                                    </p>
-                                </div>
-                                <div class="product-colors mt-2">
-                                    <div class="color-switch float-wrapper">
-                                        <p class="price text-left">500.000 ₫</p>
-                                        <p class="sale text-left">0 ₫</p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type="number" id="how-number5" placeholder="0" value="0"/>
-                                </p>
-                                <div class="product-buttons mt-4">
-                                    <div class="row align-items-center">
-                                        <div class="col-2">
-                                            <button type="button" id="" class="btn-icon add-heart" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
-                                                <i class="fa fa-heart text-heart"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-2">
-                                            <button type="button" class="btn-icon" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                                <i class="fa fa-share"></i>
-                                            </button>
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <button type="button" id="addition5" class="btn btn-block btn-primary btn-circle btn-icon-left">
-                                                <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    </div>
-                </div>
-            </div>
-          
-<!-- ***************************************************************** -->
-              
-            </div>
-
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <!-- #22222222222222222222222222222222222222222222222222222222222 -->
-                test
-            </div>
-            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-               <!-- #22222222222222222222222222222222222222222222222222222222222 -->
-               test
-            </div>
-          </div>
-        
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ./Tabs -->
-
-  <!-- footer -->
-  <div class="container">
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-md-6">
-                <h6 class="section-title h1 text-left"><i class="ti-ruler"></i> TIN TỨC</h6>
-                <article class="test">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <article class="item-news item-news-common">
-                                <h5 class="tilte-news">
-                                    <a href="#">LÃNH SỰ QUÁN NHẬT BẢN TẠI TP.HCM TRAO TẶNG HƠN 70...</a>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="thumb-art">
-                                            <img src="./image/news/tin1.png" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="description">
-                                            Sáng ngày 25/11, Ông Watanabe Nobuhiro - Tổng Lãnh sự Nhật Bản tại TP.HCM
-                                            cùng ông Shiraishi Hideyuki...
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-md-8">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <article class="item-news item-news-common">
-                                <h5 class="title-news">
-                                    <a href="#">“LÁ THƯ TRI ÂN” – GỬI YÊU THƯƠNG ĐẾN QUÝ THẦY CÔ...</a>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="thumb-art">
-                                            <img src="./image/news/tin2.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="description">
-                                            Vừa qua, Đoàn - Hội khoa Quan hệ Quốc tế đã tổ chức thành công chương trình
-                                            “Lá Thư Tri Ân” với mục đích gửi lời...
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="items-news item-news-common">
-                                <h5 class="title-news">
-                                    <a href="#">CÙNG ĐOÀN KHOA DU LỊCH - KHÁCH SẠN TRI ÂN THẦY CÔ...</a>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="thumb-art">
-                                            <img src="./image/news/tin3.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="description">
-                                            Vào ngày 20/11/2021 vừa qua, BCH Đoàn khoa Du Lịch – Khách Sạn đã tổ chức
-                                            thành công Đêm nhạc...
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="items-news item-news-common">
-                                <h5 class="title-news">
-                                    <a href="#">KHOA ĐÔNG PHƯƠNG TỔ CHỨC CHUNG KẾT CUỘC THI HÙNG...</a>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="thumb-art">
-                                            <img src="./image/news/tin4.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="description">
-                                            Khoa Ngôn ngữ và Văn hóa Phương Đông vừa tổ chức thành công vòng chung kết Cuộc thi hùng biện tiếng Việt 2021 với chủ đề “Sinh viên và việc giữ gìn sự trong...
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="items-news item-news-common">
-                                <h5 class="title-news">
-                                    <a href="#">KHOA QUAN HỆ QUỐC TẾ: BÁO CÁO CHUYÊN ĐỀ “CÂU...</a>
-                                </h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="thumb-art">
-                                            <img src="./image/news/tin5.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="description">
-                                            Đại dịch Covid-19 đã tạo ra những thay đổi chưa từng có trước đây, ảnh hưởng rất lớn đến nhiều ngành nghề, đặc biệt là những ngành có sự kết nối toàn cầu như lĩnh vực truyền thông...
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-    
-                        </div>
-                    </div>
-            </div>
-            </article>
-            <div class="col-md-6">
-                <h6 class="section-title h1 text-left"><i class="ti-comments"></i> THẢO LUẬN</h6>
-                <iframe src="https://www5.cbox.ws/box/?boxid=930554&boxtag=LaagCR" style="border:1px solid #ccc;" width="100%"
-                    height="800" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0"
-                    marginwidth="0" scrolling="auto"></iframe>
-    
-            </div>
-            <hr class="my-2">
-        </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 mt-4">
-                <ul class="list-group list-group-flush lead">
-                    <li class="list-group-item">
-                        <span class="fw-bold">Địa Chỉ:</span> 828 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold">Điện Thoại:</span> (+84 28) 38 632 052 - 38 629 232
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold">Fax:</span> (+84 28) 38 650 991
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold">Email:</span> contact@huflit.edu.vn
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <div id='map' class="text-left">
-                    
-                </div>
-                
+                <hr class="my-2">
             </div>
         </div>
     </div>
-</div>
+
+    <div div class="footer">
+        <div class="container-fluid">
+            <div class="container1">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>KHOA ĐÀO TẠO</h4>
+                            <ul>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Ngoại Ngữ</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Công Nghệ Thông Tin</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Đông Phương</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Quản trị Kinh doanh</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Khoa Quan hệ Quốc tế</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-col">
+                            <h4>KHÓA HỌC</h4>
+                            <ul>
+                                <li><a href="#"><i class="ti-angle-right"></i> 5 khóa học mới</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Trung học cơ sở</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Trung học phổ thông</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Cao đẳng - Đại học</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-col">
+                            <h4>HỌC VIÊN</h4>
+                            <ul>
+                                <li><a href="#"><i class="ti-angle-right"></i> Xem điểm</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Xem học phí</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Xem học bổng</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i> Hỗ trợ học viên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item footer-li">
+                                <h3 class="font-weight-bold">
+                                    <a href="./index.html"><img src="./image/logo.png" alt="" class="mt-0 img-logo-footer" width="25%"></a>
+                                </h3>
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/location.png" width="24px" alt="">
+                                    Địa Chỉ:</span> 828 Sư Vạn Hạnh, Phường 13, Quận 10,
+                                    TP.HCM
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold ">
+                                    <img src="./image/phone-call.png" width="24px" alt="">
+                                    Điện Thoại:</span> (+84 28) 38 632 052 - 38 629 232
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/fax.png" width="24px" alt="">
+                                    Fax:</span> (+84 28) 38 650 991
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/email.png" width="24px" alt="">
+                                    Email:</span> contact@huflit.edu.vn
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coppy-right">
+        <p class="copyright-text text-center">Copyright © 2021 TDKT ONLINE</p>
+    </div>
 
 </body>
-  
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
+
 </html>

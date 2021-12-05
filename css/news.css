@@ -1,0 +1,114 @@
+.title-page-news {
+}
+
+.news-section {
+    margin-top: 18px;
+    justify-content: center;
+}
+
+.new-img {
+    position: relative;
+    width: 400px;
+    height: 186px;
+    border-radius: 10px;
+}
+
+.new-img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.block-text-des {
+    
+}
+
+.title-new {
+    max-width: 450px; 
+    white-space: pre-wrap;
+}
+
+.title-new a {
+    text-decoration: none;
+}
+
+.title-new-link {
+    font-weight: 600;
+}
+
+.title-new:hover {
+    cursor: pointer;
+    
+}
+
+.title-new {
+    font-size: 18px;
+    color: #3d3d3d;
+    font-weight: 500;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.time-new {
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.des-new {
+    max-width: 600px; 
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.more-new {
+    position: absolute;
+    bottom: 0;
+}
+
+.best-new {
+
+}
+.wrapper {
+    max-width: 800px;
+}
+.accordion-header {
+    margin-top: 2px;
+    align-items: center;
+    display: flex;
+    padding: 5px 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+}
+.accordion-body {
+    display: none;
+    background: rgb(240, 239, 239);
+    float: left;
+    border-radius: 4px;
+}
+
+.accordion-body > ul {
+    padding: 10px;
+}
+
+.accordion-item.acctive .accordion-header {
+    background: #0c81bb;
+    color:white;
+}
+.accordion-body ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color:black;
+    text-decoration: none;
+    font-weight: none;
+        color:#1895ff; 
+    display:block;
+    transition: all 0.3s ease;
+}
+.accordion-body ul li a:hover {
+    color: coral;
+    padding-left: 3px;
+}
+
+/* detial news */
