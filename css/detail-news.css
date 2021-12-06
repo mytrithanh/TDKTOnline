@@ -392,6 +392,7 @@ template {
     } 
     .suggestions .item{
       width: 400px;
+      margin: auto;
     }
     .suggestions .item img{
       border-radius:10px ;

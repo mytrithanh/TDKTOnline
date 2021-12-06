@@ -21,6 +21,9 @@ $("#contactForm").validate ({
            maxlength: "Vui lòng nhập số điện thoại chính xác!"
   
        },
+       Email: {
+            required: "Vui lòng nhập Email"
+        },
        message: {
            required: "Vui lòng nhập nội dung!",
            minlength: "Nội dung ít nhất phải 100 ký tự!",
