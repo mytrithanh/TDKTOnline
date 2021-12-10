@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/Logo.jpg" type="image/x-icon">
-    <title>Khóa Học - TDKT Online</title>
+    <title>Học Phí - TDKT Online</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fonts/themify-icons.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/detail-product.css">
+    <link rel="stylesheet" href="./css/tuition.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
+    
+    <!-- dataTables -->
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
 
     <!-- bootstrap-input-spinner Plugin -->
     <script src="./js/bootstrap.input.spinner.js"></script>
@@ -56,7 +61,7 @@
                             <a class="nav-link" aria-current="page" href="./index.html">Trang Chủ </span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./products.html">Khóa học</a>
+                            <a class="nav-link" href="./products.html">Khóa học</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Giáo viên</a>
@@ -70,7 +75,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./tuition.html">Học phí</a>
+                            <a class="nav-link active" href="./tuition.html">Học phí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./news.html">Tin Tức</a>
@@ -124,8 +129,146 @@
 
     <!-- end header -->
     <!-- content -->
-
-
+    
+    <div class="container-fluid p-2">
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+                <tr class="text-blue">
+                    <th>Tên khóa học</th>
+                    <th>Giáo viên</th>
+                    <th>Số tiết học</th>
+                    <th>Số học viên</th>
+                    <th>Ngày khai giảng</th>
+                    <th>Học phí</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#">Toán Cao Cấp</a>
+                    </td>
+                    <td>Nguyễn Văn A</td>
+                    <td>40</td>
+                    <td>61</td>
+                    <td>01/01/2022</td>
+                    <td>
+                        <p class="price text-left">999.999 ₫</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">Sinh Học 9</a>
+                    </td>
+                    <td>Nguyễn Văn D</td>
+                    <td>52</td>
+                    <td>63</td>
+                    <td>01/05/2022</td>
+                    <td>
+                        <p class="price text-left">299.000 ₫</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">Đột Phá 8+ Vật Lý</a>
+                    </td>
+                    <td>Nguyễn Văn B</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>02/02/2022</td>
+                    <td>
+                        <p class="price text-left">899.000 ₫</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">Vật Lý</a>
+                    </td>
+                    <td>Nguyễn Văn D</td>
+                    <td>45</td>
+                    <td>100</td>
+                    <td>12/02/2022</td>
+                    <td>
+                        <p class="price text-left">500.000 ₫</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                    <td>2008/11/28</td>
+                    <td>$162,700</td>
+                </tr>
+                <tr>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>2012/12/02</td>
+                    <td>$372,000</td>
+                </tr>
+               
+                <tr>
+                    <td>Hermione Butler</td>
+                    <td>Regional Director</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td>2011/03/21</td>
+                    <td>$356,250</td>
+                </tr>
+                <tr>
+                    <td>Lael Greer</td>
+                    <td>Systems Administrator</td>
+                    <td>London</td>
+                    <td>21</td>
+                    <td>2009/02/27</td>
+                    <td>$103,500</td>
+                </tr>
+                <tr>
+                    <td>Jonas Alexander</td>
+                    <td>Developer</td>
+                    <td>San Francisco</td>
+                    <td>30</td>
+                    <td>2010/07/14</td>
+                    <td>$86,500</td>
+                </tr>
+                <tr>
+                    <td>Shad Decker</td>
+                    <td>Regional Director</td>
+                    <td>Edinburgh</td>
+                    <td>51</td>
+                    <td>2008/11/13</td>
+                    <td>$183,000</td>
+                </tr>
+                <tr>
+                    <td>Michael Bruce</td>
+                    <td>Javascript Developer</td>
+                    <td>Singapore</td>
+                    <td>29</td>
+                    <td>2011/06/27</td>
+                    <td>$183,000</td>
+                </tr>
+                <tr>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
+                    <td>New York</td>
+                    <td>27</td>
+                    <td>2011/01/25</td>
+                    <td>$112,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="text-blue">
+                    <th>Tên khóa học</th>
+                    <th>Giáo viên</th>
+                    <th>Số tiết học</th>
+                    <th>Số học viên</th>
+                    <th>Ngày khai giảng</th>
+                    <th>Học phí</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
 
     <!-- end content -->
@@ -210,6 +353,7 @@
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/tuition.js"></script>
 </body>
 
 </html>
