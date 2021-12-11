@@ -27,9 +27,9 @@
 }
 
 .text-cool-3d {
-    font-size: 30px;
+    font-size: 50px;
     color: #0c81bb;
-    font-weight: 900;
+    font-weight: 1000;
     text-shadow: 0px 0px 0 rgb(-24,93,151),
                  0px 1px  0 rgb(-60,57,115),
                  0px 2px 1px rgba(148,148,148,0.47),
@@ -874,6 +874,7 @@ a>.block {
 }
 
 .block .block-body {
+    background-color: #fff;
     padding: 10px 10px;
 }
 

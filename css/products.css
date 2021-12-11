@@ -1,0 +1,68 @@
+.navbar-sec {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.navbar-sec ul li {
+    padding: 9px 0;
+}
+
+.navbar-sec ul li a {
+    font-size: 18px;
+}
+
+.navbar-sec ul li a:hover{
+    text-decoration: none;
+}
+
+.box-slider {
+    height: 26em;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.slide-product-1{
+    background: url(https://www.anlocviet.vn/upload/images/uu-dai-khach-hang-lon.jpg)no-repeat center / cover;
+}
+
+.slide-product-2{
+    background: url(https://nhakhoavietmysmile.vn/wp-content/uploads/2020/05/ANHBIA-1.png)no-repeat center / cover;
+}
+
+.section-title {
+    font-weight: 600;
+}
+
+.products-box {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.products-box:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 60, 255, 0.5);
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+.product-box-body {
+    background-color: #FFF;
+    border-radius: 0 0 3px 3px;
+}
+
+.product-title {
+    font-weight: 700;
+}
+
+.product-title > a:hover {
+    text-decoration: none;
+}
+
+.product-teacher-section {
+    padding: 10px 0 0 0;
+}
