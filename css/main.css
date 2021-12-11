@@ -1190,4 +1190,17 @@ ul>li {
     color: #fff;
 }
 
+.topBtn {
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: #0088ff;
+    border-radius: 50%;
+    display: none;
+}
+
 

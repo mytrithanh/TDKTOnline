@@ -142,9 +142,10 @@ $(document).ready(function(){
         heart = heart + 1;
         $("#heart-quantity").text(heart);
     });
-    $("input[type='number']").inputSpinner()
-    $(".buttons-only").inputSpinner({buttonsOnly: true, autoInterval: undefined })
+    $("input[type='number']").inputSpinner();
+    $(".buttons-only").inputSpinner({buttonsOnly: true, autoInterval: undefined });
 });
+
 
 
 
