@@ -1,0 +1,361 @@
+.product-table,.status, .tutorial{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: px;
+    text-align: justify;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+.tutorial{
+    font-size: 18px;
+}
+.product-table{
+    display: flex;
+    border-bottom: 2px solid rgb(241, 234, 222) ;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+.photo-product img{
+    width: 750px;
+    height: 400px;
+}
+.photo-product{
+    width:60%;
+}
+.information{
+    width: 40%;
+    margin-left: 40px;
+}
+.product-table button{
+    margin-top: 10px;
+}
+.information{
+    color: rgb(83, 83, 83);
+}
+.information h2{
+    color: black;
+}
+.sao{
+    margin-right: 5px;
+}
+.star i,.evaluate i{
+    color: rgba(255, 230, 0, 0.993)
+}
+.money{
+    border: hidden;
+    background-color: rgb(248, 248, 248);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.money .cost{
+    padding-left: 5px;
+    font-size: 15px;
+    text-decoration-line: line-through;
+}
+.money .promotional-price{
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: tomato;
+}
+.information ul{
+    list-style-type: square;
+}
+.information button{
+    border: hidden;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius:5px ;
+}
+#shop{
+    color: #1895ff;
+    background-color: rgb(212, 237, 245);
+}
+.registration{
+    background-color: #1895ff;
+    color: white;
+    width: 500;
+}
+#shop:hover{
+    color: #fff;
+    background-color: rgb(0, 132, 255);
+    box-shadow: 2px 4px gray;
+}
+.registration:hover{
+    background-color: rgb(0, 132, 255);
+    box-shadow: 2px 4px gray;
+}
+.outline{
+    margin-top: 15px;
+}
+.Main-part > h4{
+    border-bottom: 2px solid rgb(228, 202, 155) ;
+    padding-bottom: 5px;
+}
+h5{
+    border: hidden;
+    background-color:rgb(240, 240, 240) ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.accordion-header {
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.tt-dau{
+    margin-bottom: 20px;
+}
+.accordion-body {
+    display: none;
+    border-radius: 4px;
+}
+
+.accordion-body > ul {
+    padding: 10px;
+}
+
+.accordion-body ul li {
+    line-height: 30px;
+}
+
+.accordion-item.acctive .accordion-header {
+    color:rgb(114, 111, 111);
+}
+.accordion-body ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color:black;
+    text-decoration: none;
+    font-weight: none;
+    color:#1895ff; 
+    display:block;
+    transition: all 0.3s ease;
+}
+.accordion-body ul li a:hover {
+    color: coral;
+    padding-left: 3px;
+}
+.outline h4{
+    border: 2px solid rgb(44, 44, 233);
+    width: 200px;
+    height: 38px;
+    color: white;
+    background-color: rgb(44, 44, 233);
+    border-radius: 5px 5px 0 0;
+    justify-content: center;
+}
+.outlineborder{
+    border-bottom: 2px solid rgb(44, 44, 233);
+    margin-top: -9px;
+    margin-bottom: 15px;
+}
+.outline h5 i{
+    float: right;
+}
+.introduce, .tutorial{
+    display: flex;
+}
+.teacher{
+    margin-top: 23px;
+}
+.teacher > h4 {
+    border-bottom: 2px solid rgb(228, 202, 155) ;
+    padding-bottom: 5px;
+}
+
+.evaluate > h4 {
+    border-bottom: 2px solid rgb(228, 202, 155) ;
+    padding-bottom: 5px;
+}
+
+.portrain{
+    width: 150px;
+}
+.teacher-information{
+    width: 90%;
+}
+#numble-star ,#detail{
+    text-align: center;    
+}
+.sosao{
+    font-size: 50px;
+    font-weight: 600;
+}
+.khungsao{
+    border: solid;
+    height: 10px;
+    width: 30px;
+    flex-direction: column-reverse;
+    background-color: rgb(148, 147, 147);
+    color:rgb(148, 147, 147) ;
+}
+.luongsao{
+    display: flex;
+}
+.sostar{
+  width: 12%;
+}
+
+.progress{
+    width: 80%;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.date {
+    font-size: 12px
+}
+
+.comment-text {
+    font-size: 15px;
+}
+
+.fs-12 {
+    font-size: 15px
+}
+.fs-12 i{
+    color: rgb(113, 113, 248);
+}
+.shadow-none {
+    box-shadow: none
+}
+
+.name {
+    color: #007bff
+}
+
+.cursor:hover {
+    color: rgb(0, 0, 255)
+}
+
+.cursor {
+    cursor: pointer
+}
+#cancel{
+    color: white;
+    background-color: blue;
+}
+#cancel:hover{
+    background-color: rgb(77, 77, 255);
+}
+.textarea {
+    resize: none
+}
+
+#binhluan{
+    margin-left: 0px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.cmt {
+    border-radius: 15px;
+}
+
+.Main-part
+{
+    width: 75%;
+    margin-right: 15px;
+}
+.suggest{
+    width: 25%;
+    margin-left: 20px;
+}
+.khoahoc{
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.khoahoc:hover{
+    border-color: rgb(238, 187, 92);
+    box-shadow: 2px 5px gray;
+}
+.related h4 , .hot h4{
+    text-align: center;
+}
+.khoahoc a img{
+    border-radius: 10px;
+}
+
+.icon-accordion {
+}
+
+@media (max-width: 1398px) {
+    .photo-product img{
+        width: 550px;
+        height: 350px;
+    }
+    .photo-product{
+        width:50%;
+    }
+    .information{
+        width: 50%;
+    }
+}
+@media (max-width: 1270px) {
+    .photo-product img{
+        width: 500px;
+        height: 300px;
+    }
+    .photo-product{
+        width:55%;
+    }
+    .information{
+        width: 45%;
+    }
+}
+@media (max-width: 1073px) {
+    .product-table,.status, .tutorial{
+        margin-left: 50px;
+        margin-right:50px;
+    }
+}
+@media (max-width: 973px) {
+    .photo-product img{
+        width: 400px;
+        height: 320px;
+    }
+    .photo-product{
+        width:50%;
+    }
+    .information{
+        width: 50%;
+    }
+}
+@media (max-width: 888px) {
+    .product-table{
+         display: block;
+    }
+    .photo-product{
+        width: 100%;
+    }
+    .photo-product img{
+        width: 100%;
+        height: 100%;
+    }
+    .information{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .Main-part{
+        width: 100%;
+    }
+    .suggest{
+        display: none;
+    }
+}
+@media (max-width: 560px) {
+    .product-table,.status, .tutorial{
+        margin-left: 20px;
+        margin-right:20px;
+    }
+}

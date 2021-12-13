@@ -29,5 +29,5 @@ $("#contactForm").validate ({
            minlength: "Nội dung ít nhất phải 100 ký tự!",
        }
    }
-  });
+  })
   

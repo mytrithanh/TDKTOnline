@@ -66,3 +66,143 @@
 .product-teacher-section {
     padding: 10px 0 0 0;
 }
+.new-feed {
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+.box-inner-new {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+a {
+    background: transparent;
+}
+
+/* Card info */
+.container1 {
+    justify-self: center;
+    align-items:center;
+}
+
+.container1 .card .box {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.container1 .card .box .content {
+    text-align: center;
+}
+
+.container1 .card .box .content h5 {
+    font-size: 1.6em;
+    color:rgba(2, 2, 114, 0.657);
+    z-index: 1;
+    transition: 0.5s;
+}
+.container1 .card .box .content p {
+    font-size: 1.1em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg,#b95ce4,#4f29cd);
+}
+.container1 .card:hover .box .content h5 {
+    color: white;
+}
+.container1 .card:hover .box .content p {
+    color: white;
+}
+
+  
+.card_img {
+    width: 200px;
+    height: 200px;
+    border:3px solid rosybrown;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 2px;
+}
+.title-info {
+    text-align: center;
+}
+
+
+/* statistical */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+}
+.l-bg-cherry {
+    background: linear-gradient(to right, #493240, #f09) !important;
+    color: #fff;
+}
+
+.l-bg-blue-dark {
+    background: linear-gradient(to right, #373b44, #4286f4) !important;
+    color: #fff;
+}
+
+.l-bg-orange-dark {
+    background: linear-gradient(to right, #a86008, #ffba56) !important;
+    color: #fff;
+}
+
+.card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+    font-size: 110px;
+}
+
+.card .card-statistic-3 .card-icon {
+    text-align: center;
+    line-height: 50px;
+    margin-left: 15px;
+    color: #000;
+    position: absolute;
+    right: -5px;
+    top: 20px;
+    opacity: 0.1;
+}
+
+.l-bg-cyan {
+    background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+    color: #fff;
+}
+
+.l-bg-green {
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+    color: #fff;
+}
+
+.l-bg-cyan {
+    background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+    color: #fff;
+}
+
