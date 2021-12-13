@@ -97,12 +97,12 @@ a {
     background: white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    display: flex;
     justify-self: center;
     align-items: center;
     transition: 0.5s;
 }
 .container1 .card .box .content {
+    padding: 10px;
     text-align: center;
 }
 
@@ -133,8 +133,8 @@ a {
 
   
 .card_img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border:3px solid rosybrown;
     border-radius: 50%;
     overflow: hidden;
