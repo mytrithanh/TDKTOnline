@@ -23,6 +23,10 @@ section ,.relatednews{
  .news{
    display: flex;
  }
+
+ .news p {
+   font-size: 18px;
+ }
  .author{
    text-align: right;
  }
@@ -55,7 +59,7 @@ section ,.relatednews{
  .advertisement h3{
      border-bottom:2px solid rgb(231, 214, 184) ;
  }
- .advertisement a,.suggestions a{
+ .advertisement a{
      transition: 1s;
 }
 .advertisement img{
@@ -75,12 +79,18 @@ section ,.relatednews{
    color: rgb(201, 137, 53);
  }
  .relatednews{
-   margin-top: -50px;
+   margin-top: -66px;
+   font-size: 20px;
+ }
+ .newsnext{
+   margin-top: -10px;
  }
  .relatednews a{
   color: rgb(104, 104, 187);
 }
-
+#tindau{
+  margin-top: -15px;
+}
 .suggestions{
     width: auto;
     margin-left: 30px;
@@ -89,13 +99,13 @@ section ,.relatednews{
 #carouselplgin{
     height: auto;
 }
+
 .item{
   height: 200px;
   width: 350px;
 }
-.suggestions h3{
-  margin-bottom: 50px;
-}
+
+
 ol,
 ul,
 dl {
@@ -391,7 +401,8 @@ template {
       width: 100%;
     } 
     .suggestions .item{
-      width: 400px;
+      width: 350px;
+      height: 170px;
       margin: auto;
     }
     .suggestions .item img{
@@ -407,7 +418,6 @@ template {
     left: auto; } 
     .suggestions .item{
       width: 500px;
-      height: 200px;
       margin: auto;
     }
   }
