@@ -71,7 +71,7 @@ color: rosybrown;
 .card button {
     width: 150px;
     height: 40px;
-    border : 1px solid rosybrown;
+    border : 1px solid #0088ff;
     background: transparent;
     color: black;
     margin: auto;
@@ -80,7 +80,8 @@ color: rosybrown;
     transition: 0.5s;
 }
 .card button:hover {
-    background-color: tomato;
+    color: #fff;
+    background-color: #0088ff;
 }
 .card_img:hover {
     width: 100%;
