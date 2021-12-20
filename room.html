@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/Logo.jpg" type="image/x-icon">
+    <title>Khóa Học - TDKT Online</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts/themify-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="./css/room.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- bootstrap-input-spinner Plugin -->
+    <script src="./js/bootstrap.input.spinner.js"></script>
+
+
+</head>
+
+<body>
+    <div class="header-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top top-header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo d-inline-block">
+                        <img src="./image/logo.png" alt="TDKT Online" width="160" class="img-fluid">
+                    </div>
+
+                    <div class="d-inline-block d-lg-none">
+                        <form class="form-inline" style="width: 100px; display: inline-block;">
+                            <input class="form-control mr-sm-2 ml-4" style="width: 100px; display: inline-block;"
+                                type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 " style="width: 40px" type="submit"><i
+                                    class="ti-search text-center"></i></button>
+                        </form>
+                    </div>
+                </a>
+
+                <span class="shopping-cart d-lg-none btn-shopping-cart">
+                    <a href="#">
+                        <i class="ti-shopping-cart head-icon  btn">
+                            <span class="quantity" id="products-quantity-mobile">0</span>
+                        </i>
+                    </a>
+                </span>
+                <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa fa-bars btn-icon-menu"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav text-left">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Trang Chủ </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products.html">Khóa học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./teacher.html">Giáo viên</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- data-bs-toggle="dropdown" -->
+                            <a class="nav-link dropdown-toggle" href="./room.html"> Phòng thi </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./room.html"> Phòng 1</a></li>
+                                <li><a class="dropdown-item" href="#"> Phòng 2 </a></li>
+                                <li><a class="dropdown-item" href="#"> Phòng 3 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tuition.html">Học phí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">Tin Tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- sub header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <div class="container-fluid">
+                <form class="form-inline collapse navbar-collapse">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="ti-search"></i>
+                        Tìm</button>
+                </form>
+
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a href="./login.html">
+                                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-id-badge"></i>Đăng nhập</button>
+                            </a>
+                            <a href="./register.html">
+                                <button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-user"></i> Đăng ký</button>
+                            </a>
+                            <a href="./contact.html"><button type="button" class="btn btn-primary ml-2 btn-event"><i class="ti-comments"></i> Góp ý</button></a>
+                            <span class="favorite-cart ">
+                                <a href="#">
+                                    <i class="ti-heart head-icon ml-2 btn ">
+                                        <span class="heart-quantity" id="heart-quantity">0</span>
+                                    </i>
+                                </a>
+                            </span>
+
+                            <span class="shopping-cart d-none d-lg-inline-block">
+                                <a href="#">
+                                    <i class="ti-shopping-cart head-icon ml-2 btn">
+                                        <span class="quantity" id="products-quantity-pc">0</span>
+                                    </i>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- room -->
+
+    <div class="room">
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><i class="fa fa-home"></i><a href="./index.html">Trang Chủ</a></li>
+              <li class="breadcrumb-item"><a href="./room.html">Phòng Thi</a></li>
+              <li class="breadcrumb-item active"><a href="./room.html">Phòng Thi 1</a></li>
+            </ol>
+          </nav>
+          <!-- end breadcrumb -->
+        <div class="container-fluid">
+            <div class="order_result" style="text-align:center;font-weight:bold;">NGỮ VĂN</div>
+            <div class="test-item-list">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Luyện thi ĐH, CĐ (4 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Bài Kiểm Tra 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Bài Kiểm Tra 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Khác (2 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Kiểm tra 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Kiểm Tra 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Đề cương luyện thi (2 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề cương 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề cương 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="order_result" style="text-align:center;font-weight:bold;">TOÁN</div>
+            <div class="test-item-list">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Luyện thi ĐH, CĐ (3 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Bài Kiểm Tra 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Bài Kiểm Tra 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Đề Luyện Trắc Nghiệm
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Trắc nghiệm 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Trắc nghiệm 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Ôn đầu vào lớp 12
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt=""> Luyện thi Tốt nghiệp (10 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi TN THPT 2018</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi TN THPT 2019</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Thi thử Tốt nghiệp (4 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi thử số 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi thử số 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Khác (2 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề kiểm tra đầu vào 1<a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề kiểm tra đầu vào 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="order_result" style="text-align:center;font-weight:bold;">Tiếng Anh</div>
+            <div class="test-item-list">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Luyện thi Tốt nghiệp (1 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi học sinh giỏi tiếng anh 2019</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Thi thử Tốt nghiệp (8 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Level 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Level 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Thi thử ĐH, CĐ (16 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi thử đại học tiếng anh 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Đề thi thử đại học tiếng anh 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Đề luyện listening
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Listening 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Listening 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Đề luyện Writing
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Writing 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Writing 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Đề ôn thi Toeic
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Toeic Level 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Toeic Level 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Đề ôn thi ielts
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Ielts level 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Ielts level 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Kiểm tra thử Ielts
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Test number 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Test number 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="labelcontest">
+                            <img src="image/clock.png" class="activityicon" alt="">Khác (46 đề)
+                        </div>
+                        <ul class="quiz-list">
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/Note.png" class="activityicon" alt="">
+                                        <a href="#">Bài Kiểm Tra 1</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="activity quiz clearfix">
+                                    <div class="classquiz">
+                                        <img src="image/note.png" class="activityicon" alt="">
+                                        <a href="#">Bài Kiểm Tra 2</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <a class="view-more" href="#" title="Xem toàn bộ các bài kiểm tra, đề thi tương ứng">Vào Thi
+                                »</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="more-class">
+                            <a href="#">XEM THÊM</a>
+                            <div class="info">
+                                <img src="image/error.jpg" alt="">
+                                <p>Đang trong quá trình update thêm đề kiểm tra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+   
+    <div div class="footer">
+        <div class="container-fluid">
+            <div class="container1">
+                <div class="row">
+                    <div class="col-md-3 p-0">
+                        <div class="footer-col">
+                            <h4>
+                                <i class="fa fa-bookmark"></i>
+                                KHOÁ HỌC NỔI BẬT
+                            </h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Khoa Ngoại Ngữ</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Khoa Công Nghệ Thông Tin</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Khoa Đông Phương</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Khoa Quản trị Kinh doanh</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-0">
+                        <div class="footer-col">
+                            <h4 class="">
+                                <i class="fa fa-book"></i>
+                                KHÓA HỌC
+                            </h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> 5 khóa học mới</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Trung học cơ sở</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Trung học phổ thông</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Cao đẳng - Đại học</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="footer-col">
+                            <h4>
+                                <i class="fa fa-graduation-cap"></i>
+                                HỌC VIÊN
+                            </h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Xem điểm</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Xem học phí</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Xem học bổng</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right footer-icon"></i> Hỗ trợ học viên</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4 p-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item footer-li">
+                                <h3 class="font-weight-bold">
+                                    <a href="./index.html"><img src="./image/logo.png" alt="" class="mt-0 img-logo-footer" width="25%"></a>
+                                </h3>
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/location.png" width="24px" alt="">
+                                    Địa Chỉ:</span> 828 Sư Vạn Hạnh, P13, Q10,
+                                    TP.HCM
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold ">
+                                    <img src="./image/phone-call.png" width="24px" alt="">
+                                    Điện Thoại:</span> (+84 28) 38 632 052
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/fax.png" width="24px" alt="">
+                                    Fax:</span> (+84 28) 38 650 991
+                            </li>
+                            <li class="list-group-item footer-li">
+                                <span class="font-weight-bold">
+                                    <img src="./image/email.png" width="24px" alt="">
+                                    Email:</span> contact@huflit.edu.vn
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coppy-right">
+        <p class="copyright-text text-center">Copyright © 2021 TDKT ONLINE</p>
+    </div>
+
+    <button class="topBtn"><i class="fa fa-arrow-up"></i></button>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/srollTop.js"></script>
+            
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+.Search, .giaovien{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.Search{
+    margin-top: 30px;
+}
+.Search select{
+    background-color: #1895ff;
+    color: white;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+.Search option{
+    background-color: white;
+    color: black;
+}
+.Search input{
+    height: 40px;
+    border-radius: 5px;
+}
+#tim{
+    width: 70px;
+}
+.mon{
+    float: left;
+}
+.kiem{
+    float: right;
+}
+
+.kiem input {
+    border: 1px solid #ccc;
+    outline:#ccc;
+}
+
+.div{
+    clear: both;
+}
+.choose input{
+    width: 130px;
+}
+.Search select, .kiem input{
+    box-shadow: 2px 3px rgb(219, 217, 217);
+}
+.Search select:hover{
+    background-color:#0084f7 ;
+}
+.teacher-hot img{
+    object-fit: cover;
+}
+h2{
+     margin-top: 30px;
+     width: auto;
+     border-bottom: 1px solid #0084f7;
+ }
+.teacher {
+    color: rgb(39, 43, 61);
+    background: white;
+    width: 270px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 20px 15px;
+    text-align: justify;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.teacher:hover {
+    box-shadow: 0 6px 20px rgba(0, 119, 255, 0.3);
+    cursor: pointer;
+}
+ .teacher h4{
+    margin-top: 15px;
+    border-bottom: 2px solid rgb(238, 208, 152);
+    color: black;
+}
+
+.teacher img {
+    width: 268px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+.teacher{
+    border:1px solid rgb(189, 189, 189);
+    width: 273px;
+    height: 450px;
+}
+ .teacher p,.teacher button,.teacher h4
+{
+     padding-left: 5px;
+     padding-right: 5px;
+
+}
+.teacher button {
+    width: 150px;
+    height: 40px;
+    border : 1px solid rosybrown;
+    background: transparent;
+    color: black;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.xemthem{
+    margin-left:auto;
+    margin-right:auto;
+    display:block
+}
+ .teacher button:hover{
+     color: #fff;
+    background-color: #007bff;
+}
+@media (max-width: 1530px)
+{
+    .teacher {
+        margin: 5px 5px;
+    }
+}
+@media (max-width: 1480px) {
+     .teacher{
+        width: 250px;
+        height: 480px;
+      }
+    
+} 
+@media (max-width: 1380px) {
+    .Search, .giaovien{
+        margin-left: 90px;
+        margin-right: 90px;
+    }  
+}
+@media (max-width: 1214px) {
+    .teacher{
+        width: 320px;
+        height: 450px;
+    }
+}
+@media (max-width: 1158px) {
+    .teacher{
+        width: 250px;
+        height: 450px;
+    }
+}
+@media (max-width: 1000px) {
+    .teacher{
+        width: 320px;
+        height: 420px;
+        margin: auto;
+    }
+}
+@media (max-width: 853px) {
+    .Search, .giaovien{
+        margin-left: 50px;
+        margin-right: 50px;
+    } 
+    .teacher{
+        width: 290px;
+        height: 450px;
+    }
+}
+@media (max-width: 706px) {
+    .Search, .giaovien{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 647px) {
+    .mon{
+        float: none;
+    }
+    .kiem{
+        float: none;
+        margin-top: 5px;
+    }
+    h2{
+        width: 100%;
+    }
+}
+    
+

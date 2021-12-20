@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./image/Logo.jpg" type="image/x-icon">
-    <title>Học Phí - TDKT Online</title>
+    <title>Đăng Ký - TDKT Online</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fonts/themify-icons.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/tuition.css">
+    <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
-    
-    <!-- dataTables -->
-    <script src="./js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://kit.fontawesome.com/777d2b88cf.js" crossorigin="anonymous"></script>
+
 
     <!-- bootstrap-input-spinner Plugin -->
     <script src="./js/bootstrap.input.spinner.js"></script>
@@ -27,7 +25,7 @@
 
 </head>
 
-<body>
+<body class="login">
     <!-- header -->
     <div class="header-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top top-header">
@@ -75,7 +73,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./tuition.html">Học phí</a>
+                            <a class="nav-link" href="./tuition.html">Học phí</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./news.html">Tin Tức</a>
@@ -129,97 +127,74 @@
     </div>
 
     <!-- end header -->
-    <!-- content -->
-    
-    <div class="container-fluid p-2">
-        <table id="example" class="table table-striped" style="width:100%">
-            <thead>
-                <tr class="text-blue">
-                    <th>Tên khóa học</th>
-                    <th>Giáo viên</th>
-                    <th>Số tiết học</th>
-                    <th>Số học viên</th>
-                    <th>Ngày khai giảng</th>
-                    <th>Học phí</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <a href="#">Toán Cao Cấp</a>
-                    </td>
-                    <td>Nguyễn Văn A</td>
-                    <td>40</td>
-                    <td>61</td>
-                    <td>01/01/2022</td>
-                    <td>
-                        <p class="price text-left">999.999 ₫</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">Sinh Học 9</a>
-                    </td>
-                    <td>Nguyễn Văn D</td>
-                    <td>52</td>
-                    <td>63</td>
-                    <td>01/05/2022</td>
-                    <td>
-                        <p class="price text-left">299.000 ₫</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">Đột Phá 8+ Vật Lý</a>
-                    </td>
-                    <td>Nguyễn Văn B</td>
-                    <td>45</td>
-                    <td>10</td>
-                    <td>02/02/2022</td>
-                    <td>
-                        <p class="price text-left">899.000 ₫</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#">Vật Lý</a>
-                    </td>
-                    <td>Nguyễn Văn D</td>
-                    <td>45</td>
-                    <td>100</td>
-                    <td>12/02/2022</td>
-                    <td>
-                        <p class="price text-left">500.000 ₫</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="./detail-product.html">Cấu Trúc Dữ Liệu Giải Thuật</a>
-                    </td>
-                    <td>Nguyễn Văn A</td>
-                    <td>50</td>
-                    <td>500</td>
-                    <td>10/10/2022</td>
-                    <td>
-                        <p class="price text-left">1.500.000 ₫</p>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr class="text-blue">
-                    <th>Tên khóa học</th>
-                    <th>Giáo viên</th>
-                    <th>Số tiết học</th>
-                    <th>Số học viên</th>
-                    <th>Ngày khai giảng</th>
-                    <th>Học phí</th>
-                </tr>
-            </tfoot>
-        </table>
+    <!-- form -->
+    <div class="container">
+        <div class="auth-form">
+            <div class="auth-form__container">
+      
+                <div class="auth-form__header">
+                    <h4 class="auth-form__heading">ĐĂNG KÍ</h4>
+                    <a href="./login.html"><span class="auth-form__switch-btn">ĐĂNG NHẬP</span></a>
+                </div>
+                <div class="auth-form__socials">
+                  <a href="" class="btn btn-with-icon">
+                      <i class="fab fa-facebook-square"></i>
+                      Kết nối với Facebook
+                  </a> 
+                  <a href="" class="btn btn-with-icon">
+                      <i class="fab fa-google con"></i>
+                      Kết nối với Google
+                  </a>                  
+              </div>
+      
+                <div class="auth-form__form">
+                      <div class="auth-form__group">
+                          <strong class="label-form">                
+                              Tài Khoản:
+                          </strong>
+                          <input type="text" class="auth-form__input m-0" placeholder="Số Điện Thoại / Email">
+                      </div>
+                      <div class="auth-form__group mt-2">
+                          <strong class="label-form">                
+                              Họ Tên:
+                          </strong>
+                          <input type="password" class="auth-form__input m-0" placeholder="Nhập Mật khẩu">
+                      </div>
+                    <div class="auth-form__group mt-2">
+                        <strong class="label-form">                
+                          Mật Khẩu:
+                        </strong>
+                        <input type="password" class="auth-form__input m-0" placeholder="Nhập Mật khẩu">
+                    </div>
+                    <div class="auth-form__group mt-2">
+                      <strong class="label-form">                
+                        Nhập Lại Mật Khẩu:
+                      </strong>
+                      <input type="password" class="auth-form__input m-0" placeholder="Nhập Lại Mật khẩu">
+                  </div>
+                    <div class="auth-form__group mt-2">
+                        <strong class="label-form">                
+                          Mã Xác Nhận:
+                        </strong>
+                        <input type="text" class="auth-form__input m-0" placeholder="Nhập Mã Xác Nhận">
+                    </div>
+                </div>
+                <div class="auth-form__aside">
+                    <p class="auth-form__policy-text">
+                        Bằng việc đăng kí, bạn đã đồng ý với TDKT Online về
+                        <a href="" class="auth-form__policy-link">Điều khoản dịch vụ </a>&
+                        <a href="" class="auth-form__policy-link">Chính sách bảo mật </a>
+                    </p>
+                </div>
+                <div class="auth-form__controls mt-4 pb-4">
+                    <button class="btn">TRỞ LẠI</button>
+                    <button class="btn btn-primary">ĐĂNG KÝ</button>
+                </div>
+      
+               
+            </div>
+          </div>
     </div>
-
-
-    <!-- end content -->
     <!-- footer -->
     <div div class="footer">
         <div class="container-fluid">
@@ -300,19 +275,19 @@
                 </div>
             </div>
         </div>
-      </div>
-  
+    </div>
+
     <div class="coppy-right">
         <p class="copyright-text text-center">Copyright © 2021 TDKT ONLINE</p>
     </div>
-  
+
     <button class="topBtn"><i class="fa fa-arrow-up"></i></button>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/tuition.js"></script>
 <script src="./js/srollTop.js"></script>
 </body>
 
 </html>
+    

@@ -1,0 +1,82 @@
+
+
+.address {
+    color: #434343;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 20px 0 0;
+}
+.test-item {
+    width: 100%;
+    padding-top: 10px;
+}
+.clearfix {
+    display: block;
+}
+.clearfix {
+    min-width: 0;
+}
+.test-item div.test-item-list:nth-child(even) {
+    padding-right: 20px;
+}
+.test-item .test-item-list {
+    width: 50%;
+    float: left;
+    background-color: #f9f9f92f;
+}
+.labelcontest {
+    padding: 15px 10px;
+    color: #f58220;
+    font-weight: bold;
+}
+ul.quiz-list {
+    list-style: none;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #a2a2a2;
+    padding: 0;
+}
+.classquiz {
+    float: left;
+    margin: 5px 0;
+    height: 20px;
+    line-height: 20px;
+    overflow-y: hidden;
+}
+.order_result {
+    height: 34px;
+    line-height: 34px;
+    background-color: #0072bc;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+a {
+    color: #2a70b8;
+    text-decoration: none;
+    outline: none;
+}
+ul.quiz-list li a {
+    color: #000000;
+}
+ul.quiz-list li a.view-more {
+    text-align: right;
+    display: block;
+    color: #0072bc;
+    margin: 5px 0;
+}
+.room img {
+    margin-right: 10px;
+    vertical-align: bottom;
+    border: none;
+    max-width: 100%;
+    height: auto;
+    width: 17px;
+    vertical-align: middle;
+}   
+.more-class {
+    text-align: center;
+    font-weight: bold;
+    padding:5px;
+}
