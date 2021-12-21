@@ -1204,6 +1204,7 @@ ul>li {
     background-color: #0088ff;
     border-radius: 50%;
     display: none;
+    z-index: 1;
 }
 
 
