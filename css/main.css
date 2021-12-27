@@ -51,7 +51,9 @@
                  0px 0px 6px rgba(148,148,148,.2);
 }
 
-
+.title-news {
+    padding-top: 4px;
+}
 
 .home {
     background-image: url(https://bit.ly/3DsIds1);
